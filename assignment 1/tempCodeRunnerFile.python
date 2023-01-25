@@ -1,0 +1,15 @@
+
+x=int(input("enter the first number"))
+y=int(input("enter the second number"))
+sum=0
+x=x+1
+while x<y:
+     if x%2==0:
+       x+=1
+     else:
+      x+=1   
+      sum=sum+x
+      print(x)
+print(sum)
+
+     
