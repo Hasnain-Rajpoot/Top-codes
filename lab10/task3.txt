@@ -1,0 +1,3 @@
+f = open("exam-results.txt", 'r')
+d = f.read()
+print(d)

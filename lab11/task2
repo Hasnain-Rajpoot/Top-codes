@@ -1,0 +1,33 @@
+f = open("students.csv", 'r')
+p = open("newStudent.csv", "w")
+data = f.read()
+m = []
+table = []
+sum = 0
+a = data.split("\n")
+a.pop()
+
+for i in range(0, len(a)):
+    table.append(a[i].split(","))
+
+for l in range(1, len(table)):
+    for j in range(1, len(table[l])):
+        sum = sum+int(table[l][j])
+    avg = sum/4
+
+    table[l].append(sum)
+    table[l].append(avg)
+    sum, avg = 0, 0
+
+table[0].append("Total")
+table[0].append("Average")  
+print(table)
+
+
+for b in range(0, len(table)):
+    for h in range(0,len(table[b])):
+        p.write(str(table[b][h]))
+        p.write(",")
+    p.write("\n")
+
+p.close()

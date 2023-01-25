@@ -1,0 +1,7 @@
+f = open("exam-results.txt", 'r')
+d = f.read()
+e = d.split("\n")
+count = 0
+for i in e:
+    count += 1
+print(count)

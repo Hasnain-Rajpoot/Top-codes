@@ -1,0 +1,22 @@
+n = int(input("enter the number"))
+x = 0
+y = 1
+for i in range(100):
+    if x>=n:
+        break
+    print(x)
+    c = x
+    x = y
+    y = c+y
+n=675
+c=0
+while n>0:
+    a=n%10
+    n=n//10
+    c+=a
+    c+=1
+print(c)
+v="facj"
+for i in range(len(v)-1,-1,-1):
+    print(v[i],end="")
+

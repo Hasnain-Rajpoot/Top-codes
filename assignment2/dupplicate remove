@@ -1,0 +1,7 @@
+import tkinter
+top=tkinter.Tk()
+l1=tkinter.Button(top,text="click")
+l1.pack()
+t1=tkinter.Text(height=1)
+t1.pack()
+top.mainloop()

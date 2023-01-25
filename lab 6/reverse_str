@@ -1,0 +1,9 @@
+# Task1
+def reverse_str(string):
+    new_str = ""
+    for i in string:
+        new_str = i + new_str
+    return new_str
+
+n="Pakistan"
+print(reverse_str(n))

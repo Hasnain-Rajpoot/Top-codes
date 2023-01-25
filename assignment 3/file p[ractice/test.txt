@@ -1,0 +1,2 @@
+This text is written to the file
+2 line in file 

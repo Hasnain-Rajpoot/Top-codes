@@ -1,0 +1,12 @@
+f = open("goodDetail.csv", 'w')
+for i in range(2):
+    y = input("enter the name og good:")
+    f.write(y)
+    x = input("enter the price of good:")
+    f.write(",")
+    f.write(x)
+    z = input("enter the expiry date:")
+    f.write(",")
+    f.write(z)
+    f.write("\n")
+f.close()

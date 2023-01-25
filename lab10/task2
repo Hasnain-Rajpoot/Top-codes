@@ -1,0 +1,9 @@
+# TASK2
+
+f = open("exam-results.txt", 'r')
+
+d = f.read(345)
+print(d)
+p = open("new_result.txt", 'w')
+p.write(d)
+f.close()
